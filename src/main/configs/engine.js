@@ -12,7 +12,7 @@ export const engineArchMap = {
   win32: {
     ia32: 'ia32',
     x64: 'x64',
-    arm64: 'x64'
+    arm64: 'arm64'
   },
   linux: {
     x64: 'x64',
