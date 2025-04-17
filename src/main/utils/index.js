@@ -179,11 +179,6 @@ export const parseArgvAsFile = (argv) => {
 }
 
 export const getMaxConnectionPerServer = () => {
-  // TODO: must be between 1 and 16 for aria2.exe arm64 version.
-  if (process.platform === 'win32' && process.arch === 'arm64') {
-    return 16
-  }
-
   return ENGINE_MAX_CONNECTION_PER_SERVER
 }
 
